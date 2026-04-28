@@ -9,7 +9,7 @@ import CTA from "@/components/ui/CTA";
 
 export default function Home() {
   return (
-    <>
+    <main className="min-h-screen bg-[#f8f9ff]">
       <Navbar />
       <Hero />
       <Stats />
@@ -18,6 +18,6 @@ export default function Home() {
       <Process />
       <Testimonials />
       <CTA />
-    </>
+    </main>
   );
 }
