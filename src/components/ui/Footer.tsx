@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 const quickLinks = ["Home", "Services", "About Us", "Doctors", "Blog", "Contact"];
 const services = [
   "Knee Replacement",
@@ -15,8 +17,13 @@ export default function Footer() {
       <div className="mx-auto w-full max-w-[1240px] px-6 py-12 lg:px-2">
         <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-[1.3fr_1fr_1fr_1fr_1.1fr]">
           <div>
-            <h3 className="text-3xl font-extrabold">OrthoCare</h3>
-            <p className="mt-1 text-sm text-slate-200">Precision in Every Step</p>
+            <div className="flex items-center gap-3">
+              <Image src="/orthocare/logo-mark.svg" alt="OrthoCare logo" width={44} height={44} />
+              <div>
+                <h3 className="text-3xl font-extrabold">OrthoCare</h3>
+                <p className="mt-1 text-sm text-slate-200">Precision in Every Step</p>
+              </div>
+            </div>
             <p className="mt-5 max-w-xs text-sm leading-relaxed text-slate-300">
               We provide advanced orthopedic care with compassion and excellence to help you move better and live
               stronger.

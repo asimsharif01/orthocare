@@ -1,0 +1,21 @@
+<svg width="720" height="840" viewBox="0 0 720 840" fill="none" xmlns="http://www.w3.org/2000/svg">
+<defs>
+  <radialGradient id="bg" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(350 420) rotate(90) scale(360)">
+    <stop stop-color="#F8FBFF"/>
+    <stop offset="1" stop-color="#DDE9FF"/>
+  </radialGradient>
+  <linearGradient id="bone" x1="200" y1="100" x2="520" y2="760" gradientUnits="userSpaceOnUse">
+    <stop stop-color="#F9FDFF"/>
+    <stop offset="1" stop-color="#AFC5F8"/>
+  </linearGradient>
+  <radialGradient id="knee" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(360 450) rotate(90) scale(120)">
+    <stop stop-color="#62B5FF"/>
+    <stop offset="0.55" stop-color="#7A6BFF"/>
+    <stop offset="1" stop-color="#9B7CFF" stop-opacity="0.1"/>
+  </radialGradient>
+</defs>
+<circle cx="360" cy="420" r="320" fill="url(#bg)"/>
+<path d="M390 90c58 20 104 60 130 120 18 41 15 93-8 156l-35 97c-16 44-13 88 8 131l38 75c18 34 15 74-8 105-35 47-117 54-161 14-26-24-38-57-35-90l11-108c3-28-6-56-24-77l-73-84c-45-51-48-126-8-180 42-57 109-73 165-59z" fill="url(#bone)" opacity="0.85"/>
+<path d="M278 85c-44 9-78 35-97 73-24 46-18 100 15 154l52 86c27 43 34 95 19 143l-34 106c-13 40-2 85 30 113 33 28 84 35 124 13 35-19 58-59 58-99V565c0-43 17-84 48-114l77-75c50-49 63-126 30-188-34-66-102-112-174-103z" fill="url(#bone)"/>
+<circle cx="362" cy="445" r="108" fill="url(#knee)"/>
+</svg>
