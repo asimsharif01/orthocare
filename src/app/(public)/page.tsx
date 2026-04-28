@@ -6,6 +6,7 @@ import Features from "@/components/ui/Features";
 import Process from "@/components/ui/Process";
 import Testimonials from "@/components/ui/Testimonials";
 import CTA from "@/components/ui/CTA";
+import Footer from "@/components/ui/Footer";
 
 export default function Home() {
   return (
@@ -18,6 +19,7 @@ export default function Home() {
       <Process />
       <Testimonials />
       <CTA />
+      <Footer />
     </main>
   );
 }
