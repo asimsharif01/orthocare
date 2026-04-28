@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-const avatars = ["/orthocare/service-1.svg", "/orthocare/service-2.svg", "/orthocare/service-3.svg", "/orthocare/service-4.svg", "/orthocare/service-5.svg"];
+const avatars = ["/orthocare/service-1.svg", "/orthocare/service-2.svg", "/orthocare/service-3.svg"];
 
 export default function Hero() {
   return (
@@ -10,7 +10,7 @@ export default function Hero() {
           ✦ AI-Enhanced Orthopedic Care
         </span>
 
-        <h1 className="mt-8 text-6xl font-extrabold leading-[1.05] text-slate-900">
+        <h1 className="mt-8 text-6xl font-bold leading-[1.05] text-slate-900">
           Intelligent Care.
           <span className="block bg-gradient-to-r from-blue-500 to-indigo-500 bg-clip-text text-transparent">Stronger Tomorrow.</span>
         </h1>
