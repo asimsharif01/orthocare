@@ -65,28 +65,46 @@ const steps = [
 
 export default function Process() {
   return (
-    <section className="mx-auto w-full max-w-[1240px] px-6 py-10 lg:px-2">
-      <div className="rounded-3xl border border-slate-100 bg-white p-8">
-        <p className="text-sm font-bold uppercase tracking-wide text-indigo-500">Your Journey With Us</p>
-        <div className="mt-5 grid gap-6 md:grid-cols-2 lg:grid-cols-5 lg:gap-3">
-          {steps.map((step, index) => (
-            <article key={step.number} className="relative">
+    <section className="mx-auto w-full max-w-[1320px] px-6 py-10 md:px-8 lg:px-10">
+      <div className="rounded-3xl border border-slate-100 bg-white p-8 md:p-10">
+        <p className="text-xs font-semibold uppercase tracking-[0.18em] text-indigo-500">Your Journey With Us</p>
+
+        <div className="mt-6 grid gap-7 md:grid-cols-2 lg:hidden">
+          {steps.map((step) => (
+            <article key={step.number} className="rounded-2xl border border-indigo-50 p-4">
               <div className="mb-3 flex items-center gap-3">
                 <span className="flex h-9 w-9 items-center justify-center rounded-full bg-indigo-100 text-indigo-500">
                   {step.icon}
                 </span>
-                <p className="text-2xl font-black text-indigo-500">{step.number}</p>
+                <p className="text-xl font-bold text-indigo-500">{step.number}</p>
               </div>
+              <h3 className="text-3xl font-semibold text-slate-900">{step.title}</h3>
+              <p className="mt-2 text-base leading-relaxed text-slate-500">{step.description}</p>
+            </article>
+          ))}
+        </div>
+
+        <div className="mt-6 hidden items-start justify-between gap-2 lg:flex">
+          {steps.map((step, index) => (
+            <div key={step.number} className="flex min-w-0 flex-1 items-start gap-2">
+              <article className="min-w-0 flex-1">
+                <div className="mb-3 flex items-center gap-3">
+                  <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-indigo-100 text-indigo-500">
+                    {step.icon}
+                  </span>
+                  <p className="text-xl font-bold text-indigo-500">{step.number}</p>
+                </div>
+                <h3 className="text-[2rem] font-semibold leading-tight text-slate-900">{step.title}</h3>
+                <p className="mt-2 text-base leading-relaxed text-slate-500">{step.description}</p>
+              </article>
 
               {index < steps.length - 1 && (
-                <div className="absolute top-4 left-[calc(100%-4px)] hidden h-px w-[calc(100%-8px)] bg-indigo-100 lg:block">
-                  <span className="absolute top-1/2 right-0 -translate-y-1/2 text-indigo-300">→</span>
+                <div className="mt-4 flex w-12 shrink-0 items-center gap-2 text-indigo-300 xl:w-16">
+                  <span className="h-px flex-1 bg-indigo-200" />
+                  <span aria-hidden>→</span>
                 </div>
               )}
-
-              <h3 className="text-3xl font-bold text-slate-900">{step.title}</h3>
-              <p className="mt-2 text-lg text-slate-500">{step.description}</p>
-            </article>
+            </div>
           ))}
         </div>
       </div>
