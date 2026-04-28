@@ -47,11 +47,11 @@ export default function Testimonials() {
   const canGoNext = activeIndex < pages.length - 1;
 
   return (
-    <section className="mx-auto w-full max-w-[1240px] px-6 py-8 lg:px-2">
-      <p className="text-sm font-bold uppercase tracking-wide text-indigo-500">+ Patient Stories</p>
+    <section className="mx-auto w-full max-w-[1320px] px-6 py-8 md:px-8 lg:px-10">
+      <p className="text-xs font-semibold uppercase tracking-[0.18em] text-indigo-500">+ Patient Stories</p>
       <div className="mt-2 mb-6 flex items-center justify-between gap-4">
-        <h2 className="text-5xl font-extrabold text-slate-900">What Our Patients Say</h2>
-        <button className="hidden text-lg font-semibold text-indigo-500 md:block">View All Testimonials →</button>
+        <h2 className="text-4xl font-bold text-slate-900 md:text-5xl">What Our Patients Say</h2>
+        <button className="hidden text-base font-semibold text-indigo-500 md:block">View All Testimonials →</button>
       </div>
 
       <div className="overflow-hidden">

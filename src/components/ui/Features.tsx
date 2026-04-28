@@ -2,11 +2,11 @@ import Image from "next/image";
 
 export default function Features() {
   return (
-    <section className="mx-auto w-full max-w-[1240px] px-6 pb-12 lg:px-2">
+    <section className="mx-auto w-full max-w-[1320px] px-6 pb-12 md:px-8 lg:px-10">
       <div className="grid gap-8 rounded-[34px] bg-gradient-to-r from-blue-50 via-white to-violet-50 p-8 lg:grid-cols-[1fr_1.1fr_0.6fr]">
-        <div>
-          <p className="text-sm font-bold uppercase tracking-wide text-indigo-500">The Power of Technology</p>
-          <h2 className="mt-3 text-5xl font-extrabold text-slate-900">AI. Innovation. Better Outcomes.</h2>
+        <div className="pr-2">
+          <p className="text-xs font-semibold uppercase tracking-[0.18em] text-indigo-500">The Power of Technology</p>
+          <h2 className="mt-3 text-4xl font-bold leading-tight text-slate-900 md:text-5xl">AI. Innovation. Better Outcomes.</h2>
           <p className="mt-4 text-xl leading-relaxed text-slate-600">
             We combine cutting-edge AI technology with expertise to deliver precise diagnosis, personalized treatment and faster recovery.
           </p>
