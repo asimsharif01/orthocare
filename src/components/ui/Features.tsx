@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export default function Features() {
   return (
     <section className="mx-auto w-full max-w-[1240px] px-6 pb-12 lg:px-2">
@@ -20,19 +22,19 @@ export default function Features() {
         </div>
 
         <div className="rounded-3xl bg-slate-900 p-5 text-indigo-100 shadow-2xl">
-          <div className="h-[300px] rounded-2xl bg-gradient-to-b from-slate-800 via-blue-950 to-slate-950" />
+          <Image src="/orthocare/dashboard.svg" alt="AI dashboard" width={1200} height={760} className="h-[300px] w-full rounded-2xl object-cover" />
         </div>
 
         <div className="space-y-5">
           <div className="rounded-3xl bg-white p-5 shadow-sm">
             <p className="text-2xl font-bold text-slate-800">Robotic Assisted Surgery</p>
             <p className="mt-2 text-lg text-slate-500">Precision. Safety. Better outcomes.</p>
-            <div className="mt-4 h-28 rounded-2xl bg-gradient-to-r from-blue-100 to-violet-100" />
+            <Image src="/orthocare/tech-robot.svg" alt="Robotic surgery arm" width={560} height={420} className="mt-4 h-28 w-full rounded-2xl object-cover" />
           </div>
           <div className="rounded-3xl bg-white p-5 shadow-sm">
             <p className="text-2xl font-bold text-slate-800">3D Imaging & Navigation</p>
             <p className="mt-2 text-lg text-slate-500">Accurate diagnosis for effective treatment.</p>
-            <div className="mt-4 h-28 rounded-2xl bg-gradient-to-r from-blue-100 to-violet-100" />
+            <Image src="/orthocare/tech-scan.svg" alt="3D imaging monitor" width={560} height={420} className="mt-4 h-28 w-full rounded-2xl object-cover" />
           </div>
         </div>
       </div>

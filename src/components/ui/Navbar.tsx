@@ -1,21 +1,13 @@
+import Image from "next/image";
 import Link from "next/link";
 
-const navLinks = [
-  "Home",
-  "Services",
-  "About Us",
-  "Doctors",
-  "Patient Guide",
-  "Blog",
-];
+const navLinks = ["Home", "Services", "About Us", "Doctors", "Patient Guide", "Blog"];
 
 export default function Navbar() {
   return (
     <header className="mx-auto flex w-full max-w-[1240px] items-center justify-between px-6 py-6 lg:px-2">
       <div className="flex items-center gap-3">
-        <div className="flex h-11 w-11 items-center justify-center rounded-full bg-gradient-to-br from-indigo-500 via-blue-400 to-violet-300 text-white shadow-sm">
-          ●
-        </div>
+        <Image src="/orthocare/logo-mark.svg" alt="OrthoCare logo" width={44} height={44} />
         <div>
           <p className="text-2xl font-bold leading-none text-slate-900">OrthoCare</p>
           <p className="text-xs font-medium tracking-wide text-slate-500">Precision in Every Step</p>
